@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\C-\\Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{91431D97-C208-49E0-A59F-C0E187A27176}|..\\Class2th (Class)\\Class2th (Class).vcxproj|C:\\Users\\user\\Desktop\\C-\\Class2th (Class)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D51A304B-DCD9-4B00-9CB5-FB3CEF530654}|Program.vcxproj|C:\\Users\\user\\Desktop\\C-\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D51A304B-DCD9-4B00-9CB5-FB3CEF530654}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +22,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class2th (Class)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class2th (Class)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class2th (Class)\\Source.cpp",
+              "RelativeToolTip": "..\\Class2th (Class)\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-20T16:26:46.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-15T11:03:15.694Z",
               "EditorCaption": ""

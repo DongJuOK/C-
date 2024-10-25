@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{D51A304B-DCD9-4B00-9CB5-FB3CEF530654}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{24266C2D-B123-4CD7-A757-252772955B89}|..\\Class8th (Abstract)\\Class8th (Abstract).vcxproj|C:\\Users\\user\\Desktop\\C-\\Class8th (Abstract)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35721FB0-998B-4421-98C2-0D88188E90B9}|..\\Class5th (Inheritance)\\Class5th (Inheritance).vcxproj|C:\\Users\\user\\Desktop\\C-\\Class5th (Inheritance)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -26,26 +29,26 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class5th (Inheritance)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class5th (Inheritance)\\Source.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class5th (Inheritance)\\Source.cpp",
-              "RelativeToolTip": "..\\Class5th (Inheritance)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAKAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class8th (Abstract)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class8th (Abstract)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class8th (Abstract)\\Source.cpp",
+              "RelativeToolTip": "..\\Class8th (Abstract)\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-21T12:32:22.683Z",
+              "WhenOpened": "2024-10-25T12:36:07.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
-              "RelativeToolTip": "..\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAKAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class5th (Inheritance)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class5th (Inheritance)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class5th (Inheritance)\\Source.cpp",
+              "RelativeToolTip": "..\\Class5th (Inheritance)\\Source.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAJAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-21T11:03:59.632Z",
+              "WhenOpened": "2024-10-21T12:32:22.683Z",
               "EditorCaption": ""
             },
             {
@@ -56,10 +59,22 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-15T11:03:15.694Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\C-\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\C-\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
+              "RelativeToolTip": "..\\Class4th (Shallow Copy \u0026 Deep Copy)\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T11:03:59.632Z"
             }
           ]
         }

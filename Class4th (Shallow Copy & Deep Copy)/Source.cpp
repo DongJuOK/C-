@@ -6,7 +6,7 @@ class Unit
 {
 private:
 	int health = 0;
-	int* count;
+	int * count;
 
 public:
 	Unit()

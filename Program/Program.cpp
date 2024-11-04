@@ -1,84 +1,111 @@
 ﻿#include <iostream>
-#include "Computer.h"
+#include <thread>
 
 using namespace std;
 
-class Vector2
+class Packet
 {
 private:
-	int x;
-	int y;
+	int data;
 
 public:
-	Vector2(int x, int y)
+	Packet()
 	{
-#pragma region this 포인터
-		// 자기 자신을 가리키는 포인터입니다.
-		this->x = x;
-		this->y = y;
-#pragma endregion
+		data = 100;
+
+		cout << "Create Packet" << endl;
 	}
 
-	int& X() { return x; }
-	int& Y() { return y; }
-
-	Vector2 & operator +(const Vector2 & clone)
+	int Data()
 	{
-		Vector2 vector(this->x + clone.x, this->y + clone.y);
-
-		return vector;
+		return data;
 	}
 
-	Vector2 & operator ++ ()
+	~Packet()
 	{
-		this->x++;
-		this->y++;
-
-		return *this;
+		cout << "Release Packet" << endl;
 	}
 
-	Vector2 & operator ++ (int value)
+};
+
+class Character
+{
+private:
+	weak_ptr<Character> sharedPointer;
+
+public:
+	Character()
 	{
-		Vector2 clone(this->x, this->y);
+		cout << "Create Character" << endl;
+	}
 
-		this->x += 1;
-		this->y += 1;
+	void Partner(weak_ptr<Character> clone)
+	{
+		sharedPointer = clone;
+	}
 
-		return clone;
+
+	~Character()
+	{
+		cout << "Release Character" << endl;
 	}
 };
 
 int main()
 {
-#pragma region 다중 상속
-	// 하나의 하위 클래스가 여러 개의 상위 클래스를
-	// 상속받는 상속입니다.
+#pragma region 스마트 포인터
+	// 포인터를 시뮬레이트하는 동시에 자동으로 메모리 관리를 해주며,
+	// 경계 확인과 같은 추가 기능을 제공하는 추상 데이터 포인터 형식입니다.
 
-	//Computer computer;
-	
-	//computer.Use();
-	
-	// 다중 상속의 경우 여러 개의 상위 클래스에
-	// 중복되는 속성이 존재할 수 있기 때문에 범위
-	// 지정 연산자를 통해 상위 클래스의 이름을
-	// 선언하고 속성을 사용 해야 합니다.
+#pragma region Unique 포인터
+	// 특정한 객체를 하나의 스마트 포인터만 가리킬 수
+	// 있도록 되어 있는 포인터입니다.
 
-#pragma endregion
+	// unique_ptr<int> uniquePointer(new int);
+    // unique_ptr<Packet> uniquePointer1 = make_unique<Packet>();
+    // 
+    // cout << "uniquePointer1의 Data 값 : " << uniquePointer1->Data() << endl;
+    // 
+    // unique_ptr<Packet> uniquePointer2 = std::move(uniquePointer1);
+    // 
+    // cout << "uniquePointer1의 Data 값 : " << uniquePointer1->Data() << endl;
+    // cout << "uniquePointer2의 Data 값 : " << uniquePointer2->Data() << endl;
 
-#pragma region 연산자 오버로딩
+	// *uniquePointer = 100;
 
-	Vector2 vector1(1, 1);
-	Vector2 vector2(3, 3);
-
-	Vector2 position = vector1 + vector2;
-
-	cout << ++position.X() << endl;
-
-	cout << "position x의 값 : " << position.X() << endl;
-	cout << "position y의 값 : " << position.Y() << endl;
+	// cout << "uniquePointer가 가리키는 값 : " << *uniquePointer << endl;
 
 #pragma endregion
 
+#pragma region Shared 포인터
+	// 하나의 자원 객체를 여러 포인터 객체가 가리킬 수 있으며,
+	// 모든 포인터 객체가 자원 객체를 필요하지 않을 때 자원 객체를
+	// 해제하도록 설계되어 있는 포인터입니다.
+
+	// shared_ptr<Character> sharedPointer1 = make_shared<Character>();
+	// 
+	// cout << "sharedPointer1의 참조 횟수 : " << sharedPointer1.use_count() << endl;
+	// 
+	// shared_ptr<Character> sharedPointer2 = sharedPointer1;
+	// 
+	// cout << "sharedPointer1의 참조 횟수 : " << sharedPointer1.use_count() << endl;
+	// cout << "sharedPointer2의 참조 횟수 : " << sharedPointer2.use_count() << endl;
+#pragma endregion
+
+#pragma region Weak 포인터
+	// 자원 객체를 소유하지 않기 때문에 Shared 포인터로 관리되는
+	// 자원 객체를 가리켜서 참조 개수에 영향을 미치지 않게 하는 포인터입니다.
+
+	shared_ptr<Character> warrior = make_shared<Character>();
+	shared_ptr<Character> wizard = make_shared<Character>();
+
+	warrior->Partner(wizard);
+	wizard->Partner(warrior);
+
+#pragma endregion
+
+
+#pragma endregion
 
 	return 0;
 }
